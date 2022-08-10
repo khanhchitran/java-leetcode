@@ -32,7 +32,7 @@ import java.util.Map;
  * 
  */
 
-public class solution01 {
+public class TwoSum {
 
   public int[] twoSum(int[] nums, int target) {
 
@@ -49,40 +49,12 @@ public class solution01 {
     }
     return result;
 
-    // two pass
-    // int[] result = new int[2];
-    // Map<Integer, Integer> map = new HashMap<Integer, Integer>();
-    // for (int i = 0; i < nums.length; i++) {
-    // if (!map.containsKey(nums[i])) {
-    // map.put(nums[i], i);
-    // }
-    // }
-    // for (int i = 0; i < nums.length; i++) {
-    // if (map.containsKey(target - nums[i]) && map.get(target-nums[i]) != i) {
-    // result[0] = i;
-    // result[1] = map.get(target - nums[i]);
-    // break;
-    // }
-    // }
-    // return result;
-
-    // Brute Force
-    // int[] result = new int[2];
-    // for (int i = 0; i < nums.length; i++) {
-    // for (int j = i + 1; j < nums.length; j++) {
-    // if (nums[i] + nums[j] == target) {
-    // result[0] = i;
-    // result[1] = j;
-    // }
-    // }
-    // }
-    // return result;
   }
 
   public static void main(String[] args) {
     int[] nums = new int[] { 3, 3, 3 };
     int target = 6;
-    solution01 test = new solution01();
+    TwoSum test = new TwoSum();
     System.out.println((Arrays.toString(test.twoSum(nums, target))));
   }
 }
