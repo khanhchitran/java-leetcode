@@ -1,5 +1,3 @@
- 
-
 # 🚀 My Java Algorithm and LeetCode Journey
 
 Welcome to my GitHub repository! This space is dedicated to documenting my learning process and progress as I focus on mastering **Java** and tackling **LeetCode** problems. 💻
